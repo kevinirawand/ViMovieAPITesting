@@ -1,0 +1,22 @@
+// @use "../mediaQuery";
+@use "small/rule.scss";
+
+
+@use "small/homeHeaderSmall";
+@use "small/homeCouponSmall";
+@use "small/homeNewReleaseSmall";
+@use "small/homeAboutSmall";
+@use "small/homeMembershipSmall";
+@use "small/homeBookTGSmall";
+@use "small/homeGITSmall";
+@use "small/homeFooterSmall";
+
+@use "medium/homeCouponMedium";
+@use "medium/homeHeaderMedium";
+@use "medium/homeNewReleaseMedium";
+@use "medium/homeMembershipMedium";
+@use "medium/homeBookTGMedium";
+
+@use "large/homeHeaderLarge";
+@use "large/homeNewReleaseLarge";
+@use "large/homeMembershipLarge";

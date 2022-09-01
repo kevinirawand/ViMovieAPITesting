@@ -1,0 +1,44 @@
+@use "../../mediaQuery";
+
+@include mediaQuery.medium {
+	section.coupon {
+		width: 80%;
+		gap: unset;
+
+		h1 {
+			font-size: 3em;
+			text-align: unset;
+		}
+
+		.coupon-top {
+			justify-content: space-between;
+			flex-direction: row;
+			margin-bottom: 0.5rem;
+			.action {
+				justify-content: unset;
+				gap: 1rem;
+				width: 450px;
+			}
+			.discount {
+				flex-direction: row;
+				text-align: unset;
+				align-items: center;
+				gap: 0.5rem;
+				p {
+					font-size: 2em;
+					color: #000;
+				}
+				p:last-child {
+					max-width: 150px;
+				}
+			}
+		}
+
+		.coupon-bottom {
+			margin-top: 1rem;
+			display: flex;
+			align-items: baseline;
+			gap: 0.5rem;
+		}
+	}
+}

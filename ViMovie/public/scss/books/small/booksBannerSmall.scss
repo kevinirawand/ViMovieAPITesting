@@ -1,0 +1,42 @@
+.border {
+	display: flex;
+	margin: auto;
+	z-index: -1;
+	margin-top: 80px;
+}
+
+.border.sticky {
+	display: none;
+}
+
+section.banner {
+	margin-top: 50px;
+	width: 100%;
+	height: 500px;
+	margin-bottom: 100px;
+	position: relative;
+	.swiper-wrapper {
+		.swiper-slide {
+			width: 100%;
+			height: 100%;
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				-o-object-fit: cover;
+			}
+		}
+	}
+
+	.swiper-pagination-bullet {
+		width: 50px;
+		height: 5px;
+		border-radius: 10px;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: #926643;
+	}
+}

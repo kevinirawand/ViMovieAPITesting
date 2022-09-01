@@ -1,0 +1,142 @@
+section.books {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	gap: 1rem;
+	h1 {
+		text-align: center;
+		font-weight: normal;
+		font-size: 3em;
+	}
+	.books-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 300px);
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+	.book {
+		position: relative;
+		.image {
+			// background-color: #000;
+			width: 300px;
+			height: 400px;
+			z-index: 1;
+			position: relative;
+			overflow: hidden;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.hover {
+				background-color: rgba(0, 0, 0, 0);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 1rem;
+				transition: 150ms ease all;
+
+				.description {
+					width: 80%;
+					text-align: justify;
+					color: #fff;
+					min-height: 80px;
+					font-family: "Poppins";
+					transition: 150ms ease all;
+					opacity: 0;
+				}
+
+				.action {
+					display: flex;
+					gap: 1rem;
+					a {
+						width: 70px;
+						height: 70px;
+						padding: 12px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background-color: #fff;
+						border-radius: 100px;
+						opacity: 0;
+						transition: 150ms ease all;
+						svg {
+							path {
+								fill: #000;
+							}
+						}
+					}
+
+					a:first-child {
+						transform: translateX(-150%);
+						svg {
+							width: 50px;
+						}
+					}
+					a:last-child {
+						transform: translateX(150%);
+						svg {
+							width: 30px;
+						}
+					}
+				}
+			}
+		}
+
+		.image:hover {
+			.hover {
+				background-color: rgba(0, 0, 0, 0.75);
+				.description {
+					opacity: 1;
+				}
+				.action {
+					a {
+						transform: translateX(0);
+						opacity: 1;
+					}
+
+					a:hover {
+						background-color: rgb(95, 95, 95);
+
+						svg path {
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		.book-content {
+			display: flex;
+			flex-direction: column;
+			font-family: "Poppins";
+			color: #707070;
+			.title {
+				font-size: 1.5em;
+			}
+			.category {
+				font-weight: 200;
+			}
+
+			.rate {
+				display: flex;
+				align-items: center;
+				font-weight: 200;
+				gap: 0.5rem;
+
+				svg {
+					width: 25px;
+				}
+			}
+		}
+	}
+}

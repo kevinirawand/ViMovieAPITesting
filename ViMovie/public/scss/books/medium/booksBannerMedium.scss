@@ -1,0 +1,9 @@
+@use "../../mediaQuery";
+
+@include mediaQuery.medium {
+	.border {
+		margin: auto;
+		margin-top: 100px;
+	}
+}
+

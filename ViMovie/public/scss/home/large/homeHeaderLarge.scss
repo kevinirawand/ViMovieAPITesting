@@ -1,0 +1,125 @@
+@use "../../mediaQuery";
+
+@include mediaQuery.large {
+	.navbar {
+		.helper-navbar {
+			width: 60%;
+		}
+		.main-navbar {
+			width: 60%;
+			.nav-list {
+				width: 40%;
+				height: fit-content;
+				top: unset;
+				background-color: unset;
+				position: relative;
+				flex-direction: row;
+				justify-content: space-around;
+				padding: unset;
+				gap: unset;
+				left: unset;
+				align-items: center;
+				.nav-link {
+					a {
+						color: #fff;
+						font-size: 0.9em;
+					}
+					a:after {
+						background: #fff;
+					}
+				}
+
+				.mobile-section {
+					display: none;
+				}
+			}
+
+			.nav-helper {
+				width: 80px;
+				position: relative;
+				display: flex;
+				right: unset;
+				height: unset;
+				align-items: unset;
+				align-content: unset;
+				justify-items: unset;
+				justify-content: space-between;
+				gap: unset;
+				li {
+					position: relative;
+					list-style-type: none;
+					height: fit-content;
+
+					svg {
+						width: 12px;
+						height: fit-content;
+					}
+				}
+
+				li:hover {
+					svg path {
+						fill: rgb(84, 84, 84);
+					}
+				}
+
+				li:last-child,
+				#rule {
+					display: unset;
+				}
+			}
+			.hamburger {
+				display: none;
+			}
+		}
+	}
+
+	.navbar.sticky {
+		background-color: #fff;
+		.helper-navbar {
+			.helper-nav-list li a {
+				color: #000;
+			}
+			.helper-nav-list li a:hover {
+				color: rgb(104, 104, 104);
+			}
+		}
+
+		.main-navbar {
+			#rule {
+				background-color: #000;
+			}
+			height: 50px;
+
+			.logo {
+				color: #000;
+			}
+
+			.nav-list li a {
+				color: #000;
+			}
+
+			.nav-list li a::after {
+				display: none;
+			}
+
+			.nav-list li a:hover {
+				color: rgb(84, 84, 84);
+			}
+
+			.nav-helper {
+				bottom: unset;
+				li {
+					svg path {
+						fill: #000;
+						color: #000;
+					}
+				}
+				li:hover {
+					svg path {
+						fill: rgb(84, 84, 84);
+					}
+				}
+			}
+		}
+	}
+}

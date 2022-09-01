@@ -1,0 +1,101 @@
+section.book-the-great {
+	position: relative;
+	h1 {
+		text-align: center;
+		font-size: 3em;
+		color: #fff;
+		margin-top: 3rem;
+		z-index: 1;
+		position: absolute;
+		font-weight: normal;
+		width: 100%;
+	}
+	.swiper {
+		top: 0;
+		z-index: unset;
+		height: 600px;
+		width: 100%;
+		overflow-x: hidden;
+
+		background-color: #000;
+		.swiper-wrapper {
+			z-index: unset;
+		}
+		.swiper-slide {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			padding: 30px;
+			gap: 2em;
+			img {
+				width: 250px;
+				object-fit: cover;
+				object-position: center;
+				
+				// box-shadow: rgba(50, 50, 93, 0.5) 60px 60px 60px -60px inset,
+				// 	rgba(0, 0, 0, 0.7) -60px -60px -60px 60px inset;
+
+				position: relative;
+			}
+			img:after {
+				-moz-box-shadow: inset 0 0 10em #666;
+				-webkit-box-shadow: inset 0 0 10em #666;
+				box-shadow: inset 30px 30px 60em #666;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 2;
+				content: "";
+			}
+			p {
+				max-width: 400px;
+				font-size: 1.5em;
+				text-align: center;
+				span {
+					min-width: max-content;
+					display: block;
+				}
+			}
+		}
+
+		.swiper-slide {
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+		}
+
+		.text-warp {
+			width: 80%;
+		}
+
+		.parallax-bg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 130%;
+			height: 100%;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			padding: 0px;
+			transform: scale(0.5);
+		}
+
+		.swiper-pagination-bullet-active {
+			background-color: #fff;
+		}
+
+		.swiper-pagination-bullet {
+			background-color: #ccc;
+		}
+	}
+}

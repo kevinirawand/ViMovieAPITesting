@@ -1,0 +1,26 @@
+@use "../../mediaQuery.scss";
+
+@include mediaQuery.large {
+	section.membership {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		// gap: unset;
+
+		h1 {
+			width: 300px;
+		}
+
+		hr {
+			height: 200px;
+			width: 6px;
+			border-style: solid;
+			background-color: #000;
+		}
+
+		p {
+			width: 500px;
+		}
+	}
+}

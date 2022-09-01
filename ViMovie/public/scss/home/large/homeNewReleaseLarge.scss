@@ -1,0 +1,15 @@
+@use "../../mediaQuery.scss";
+
+@include mediaQuery.large {
+	section.new-release {
+		align-items: flex-start;
+		width: 80%;
+		h1 {
+			text-align: unset;
+		}
+		.card-container {
+			justify-content: unset;
+			// flex-wrap: nowrap;
+		}
+	}
+}

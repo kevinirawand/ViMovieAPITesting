@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "GT-Super-Display-Regular-Trial";
+	src: url(../../font/GT-Super-Display-Regular-Trial.otf);
+}
+
+@font-face {
+	font-family: "whyte-extra-light";
+	src: url(../../font/Whyte-ExtraLight.otf);
+}
+
+@font-face {
+	font-family: "whyte-regular";
+	src: url(../../font/Whyte-Regular.otf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "GT-Super-Display-Regular-Trial";
+	min-height: 100vh;
+	overflow-x: hidden;
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		gap: 150px;
+	}
+}

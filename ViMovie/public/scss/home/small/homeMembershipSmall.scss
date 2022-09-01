@@ -1,0 +1,32 @@
+section.membership {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	gap: 2rem;
+
+	h1 {
+		font-size: 3em;
+		font-weight: normal;
+	}
+
+	p {
+		font-size: 2em;
+	}
+
+	.upgrade-membership {
+		padding: 1rem;
+		background-color: #000;
+		border: 3px solid #000;
+		font-size: 2em;
+		color: #fff;
+		cursor: pointer;
+		transition: 0.5s ease all;
+		font-family: "GT-Super-Display-Regular-Trial";
+	}
+
+	.upgrade-membership:hover {
+		background-color: #fff;
+		color: #000;
+	}
+}

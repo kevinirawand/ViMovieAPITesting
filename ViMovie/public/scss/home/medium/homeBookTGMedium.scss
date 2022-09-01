@@ -1,0 +1,15 @@
+@use "../../mediaQuery";
+
+@include mediaQuery.medium {
+	section.book-the-great {
+		h1 {
+			font-size: 3.5em;
+		}
+		.swiper {
+			.swiper-slide {
+				flex-direction: row;
+				gap: 3em;
+			}
+		}
+	}
+}
